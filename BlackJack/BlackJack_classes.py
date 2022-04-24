@@ -7,6 +7,7 @@ class Player:
     def check_money(self):
         return ("You have " + "$" + self.money + " left.")
 
+
     
 
 

@@ -1,4 +1,5 @@
-import pydealer as pd
+import BlackJack_classes
+import BlackJack_funcs
 
 def main():
     pass
