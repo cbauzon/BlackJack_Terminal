@@ -1,8 +1,8 @@
-import BlackJack_classes
-import BlackJack_funcs
+from BlackJack_classes import *
+from BlackJack_funcs import *
 
 def main():
-    pass
+    init_players()    
 
 if __name__ == "__main__":
     main()
