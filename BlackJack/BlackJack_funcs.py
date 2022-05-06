@@ -64,6 +64,8 @@ def construct_deck():
     deck = pd.Deck()
     deck.shuffle()
     return deck
+    
+
 
 
 
