@@ -46,15 +46,15 @@ def init_players():
 def insert_bets(player_list):
     for player in player_list:
         bet = 0
-        while (bet <= 0) or (bet > player.money):
+        while (bet < 10) or (bet > player.money):
             try:
-                bet = int(input("\n" + str(player.name) + ", how much would you like to bet?: "))
-                if (bet <= 0) or (bet > player.money):
+                bet = int(input("\n" + str(player.name) + ", how much would you like to bet? (Minimum bet: $10): "))
+                if (bet < 10) or (bet > player.money):
                     raise ValueError
             except ValueError:
                 print("ERROR: Not a valid input!")
         player.sub_money(bet)
-        print( player.check_money())
+        print(player.check_money())
 
 def construct_deck():
     deck = pd.Deck()
