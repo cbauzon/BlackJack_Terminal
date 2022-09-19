@@ -1,6 +1,14 @@
 import pydealer as pd
 from BlackJack_classes import *
 
+"""
+Pydealer Notes:
+- stack = object that can hold cards
+- deck = object that contains a full set of 52 cards
+
+"""
+
+
 def intro():
     print("This is a terminal-based game of Black Jack.")
     print("All players will be starting with $500.\n")
